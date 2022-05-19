@@ -2,7 +2,6 @@
   <div id="app">
     <TheHeader />
     <main id="main">
-      <h1>Hello World</h1>
       <router-view></router-view>
     </main>
     <the-footer />
@@ -67,7 +66,7 @@ body {
 }
 
 #main {
-  flex:1;
+  flex: 1;
 }
 
 .btn {
