@@ -90,4 +90,28 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.35);
 }
+
+input,
+textarea {
+  padding: 1.5rem;
+  border: 0.1rem solid #fff;
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.1);
+  margin-bottom: 1.5rem;
+  transition: 0.25s;
+}
+
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
+  border-color: #87f;
+  box-shadow: 0 0.6rem 1.2rem rgba(30, 60, 90, 0.25);
+}
+
+input::placeholder {
+  color: #cdcdcd;
+}
 </style>
