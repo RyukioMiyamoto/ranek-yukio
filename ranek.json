@@ -1,0 +1,44 @@
+{
+  "usuario": [
+    {
+      "id": "andre@origamid.com",
+      "email": "andre@origamid.com",
+      "nome": "André Rafael",
+      "senha": "123",
+      "rua": "Rua Rua",
+      "cep": "12345678",
+      "numero": "52",
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro"
+    }
+  ],
+  "produto": [
+    {
+      "id": "notebook",
+      "nome": "Notebook",
+      "user_id": "andre@origamid.com",
+      "preco": "4999",
+      "vendido": "false",
+      "descricao": "Esse é um novo notebook",
+      "fotos": null
+    },
+    {
+      "id": "tablet",
+      "nome": "Tablet",
+      "user_id": "andre@origamid.com",
+      "preco": "2999",
+      "vendido": "false",
+      "descricao": "Esse é um novo tablet",
+      "fotos": null
+    },
+    {
+      "id": "smartwatch",
+      "nome": "Smartwatch",
+      "user_id": "andre@origamid.com",
+      "preco": "799",
+      "vendido": "false",
+      "descricao": "Esse é um novo smartwatch",
+      "fotos": null
+    }
+  ]
+}
