@@ -2,6 +2,7 @@
   <section>
     <form class="login">
       <h1>Login</h1>
+      <p>{{ !this.$store.state.login ? "" : "Logou" }}</p>
       <label for="email">Email</label>
       <input
         type="email"
@@ -44,7 +45,10 @@ export default {
     LoginCriar,
   },
   methods: {
-    logar() {},
+    logar() {
+      this.$store.dispatch("getUsuario", this.login.email);
+      this.$router.push({ name: "usuario" });
+    },
   },
 };
 </script>

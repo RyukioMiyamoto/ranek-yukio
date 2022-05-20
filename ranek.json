@@ -10,6 +10,17 @@
       "numero": "52",
       "estado": "RJ",
       "cidade": "Rio de Janeiro"
+    },
+    {
+      "id": "rafael@origamid.com",
+      "email": "rafael@origamid.com",
+      "nome": "Rafael André",
+      "senha": "123",
+      "rua": "Rua Rua",
+      "cep": "12345678",
+      "numero": "52",
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro"
     }
   ],
   "produto": [

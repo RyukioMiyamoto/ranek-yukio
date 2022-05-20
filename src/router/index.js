@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import HomeView from "@/views/HomeView";
 import ProdutoView from "@/views/ProdutoView";
 import LoginView from "@/views/LoginView";
+import UsuarioView from "@/views/usuario/UsuarioView";
 
 Vue.use(VueRouter);
 
@@ -22,7 +23,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: LoginView,
-    props: true,
+  },
+  {
+    path: "/usuario",
+    name: "usuario",
+    component: UsuarioView,
   },
 ];
 
