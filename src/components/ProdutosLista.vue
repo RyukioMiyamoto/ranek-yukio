@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import { api } from "@/services.js";
-import { serialize } from "@/helpers.js";
+import { api } from "@/services";
+import { serialize } from "@/helpers";
 import ProdutosPaginar from "@/components/ProdutosPaginar";
 
 export default {
