@@ -114,4 +114,22 @@ textarea:hover {
 input::placeholder {
   color: #cdcdcd;
 }
+
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-enter-active,
+.v-leave.active {
+  transition: 0.25s;
+}
+
+.v-enter {
+  transform: translate3d(0, -2rem, 0);
+}
+
+.v-leave-to {
+  transform: translate3d(0, 2rem, 0);
+}
 </style>

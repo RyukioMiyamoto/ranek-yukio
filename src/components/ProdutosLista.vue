@@ -1,31 +1,38 @@
 <template>
   <section class="produtos-container">
-    <div v-if="produtos && produtos.length" class="produtos">
-      <div
-        v-for="(produto, index) in produtos"
-        :key="produto.id + index"
-        class="produto"
-      >
-        <router-link to="/">
-          <img
-            v-if="produto.fotos"
-            :src="produto.fotos[0].src"
-            alt=""
-            aria-hidden="true"
-          />
-          <p class="preco">{{ produto.preco }}</p>
-          <h2 class="titulo">{{ produto.nome }}</h2>
-          <p class="descricao">{{ produto.descricao }}</p>
-        </router-link>
+    <transition mode="out-in">
+      <div v-if="produtos && produtos.length" key="produtos" class="produtos">
+        <div
+          v-for="(produto, index) in produtos"
+          :key="produto.id + index"
+          class="produto"
+        >
+          <router-link to="/">
+            <img
+              v-if="produto.fotos"
+              :src="produto.fotos[0].src"
+              :alt="produto.nome"
+            />
+            <p class="preco">{{ produto.preco }}</p>
+            <h2 class="titulo">{{ produto.nome }}</h2>
+            <p class="descricao">{{ produto.descricao }}</p>
+          </router-link>
+        </div>
+        <ProdutosPaginar
+          v-if="produtos"
+          :produtosTotal="produtosTotal"
+          :produtosPorPagina="produtosPorPagina"
+          key="paginas"
+          class="paginas"
+        />
       </div>
-    </div>
-    <div v-else-if="produtos && produtos.length === 0">
-      <p class="sem-resultados">Nenhum produto encontrado</p>
-    </div>
-    <ProdutosPaginar
-        :produtosTotal="produtosTotal"
-        :produtosPorPagina="produtosPorPagina"
-      />
+      <div v-else-if="produtos && produtos.length === 0" key="sem-resultados">
+        <p class="sem-resultados">Nenhum produto encontrado</p>
+      </div>
+      <div v-else key="carregando">
+        <PaginaCarregando />
+      </div>
+    </transition>
   </section>
 </template>
 
@@ -54,6 +61,7 @@ export default {
   },
   methods: {
     getProdutos() {
+      this.produtos = null;
       api.get(this.url).then((res) => {
         this.produtosTotal = Number(res.headers["x-total-count"]);
         this.produtos = res.data;
@@ -113,5 +121,9 @@ export default {
 
 .sem-resultados {
   text-align: center;
+}
+
+.paginas {
+  grid-column: 1/-1;
 }
 </style>

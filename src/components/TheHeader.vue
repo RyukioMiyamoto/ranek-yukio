@@ -21,7 +21,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  box-shadow: 0 2px 4px rgba(30, 60, 90, 0.1);
+  box-shadow: 0 .2rem .4rem rgba(30, 60, 90, 0.1);
 }
 
 .logo {
@@ -30,7 +30,7 @@ nav {
 
 .logo img {
   width: 9rem;
-  transition: .25sq;
+  transition: .25s;
 }
 
 .logo img:hover {

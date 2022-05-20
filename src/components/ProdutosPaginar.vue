@@ -5,7 +5,7 @@
       <span v-if="currentPage > 4">...</span>
     </li>
     <li v-for="pagina in paginas" :key="`pagina${pagina}`">
-      <router-link :to="{ query: query(pagina) }">{{ pagina }}</router-link>
+      <router-link :to="{ query: query(pagina) }">{{ pagina }} </router-link>
     </li>
   </ul>
 </template>
