@@ -20,9 +20,11 @@
         required
       />
       <button class="btn" @click.prevent="logar">Logar</button>
-      <a href="/" target="_blank" class="perdeu"
-        >Perdeu a senha? Clique aqui.</a
-      >
+      <p class="perdeu">
+        Perdeu a senha?<a href="/" target="_blank" class="perdeu-link">
+          Clique aqui.</a
+        >
+      </p>
       <LoginCriar />
     </form>
   </section>
@@ -76,9 +78,35 @@ h1 {
   max-width: 30rem;
   margin: 1rem auto 4rem auto;
 }
-
 .perdeu {
   text-align: center;
   margin: 0 auto;
+  transition: 0.25s;
+}
+
+.perdeu-link {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.perdeu-link::after {
+  display: block;
+  content: "";
+  height: 0.1rem;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+  transform-origin: right;
+}
+
+.perdeu-link:hover,
+.perdeu-link:focus {
+  color: #84f;
+}
+
+.perdeu-link:hover::after,
+.perdeu-link:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 </style>
