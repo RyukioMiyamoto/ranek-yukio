@@ -79,7 +79,7 @@ body {
   font-family: inherit;
   font-size: 1.6rem;
   color: #fff !important;
-  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.25);
+  box-shadow: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.25);
   cursor: pointer;
   transition: 0.25s;
 }
@@ -87,8 +87,8 @@ body {
 .btn:hover,
 .btn:focus {
   background-color: #65d;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.35);
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.35);
 }
 
 input,
