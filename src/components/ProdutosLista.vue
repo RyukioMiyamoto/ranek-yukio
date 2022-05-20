@@ -7,14 +7,13 @@
           :key="produto.id + index"
           class="produto"
         >
-          <router-link :to="{ name: 'produto', params: { id: produto.id } }"
-            >
+          <router-link :to="{ name: 'produto', params: { id: produto.id } }">
             <img
               v-if="produto.fotos"
               :src="produto.fotos[0].src"
               :alt="produto.nome"
             />
-            <p class="preco">{{ produto.preco | numeroPreco}}</p>
+            <p class="preco">{{ produto.preco | numeroPreco }}</p>
             <h2 class="titulo">{{ produto.nome }}</h2>
             <p class="descricao">{{ produto.descricao }}</p>
           </router-link>

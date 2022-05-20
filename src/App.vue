@@ -2,15 +2,17 @@
   <div id="app">
     <TheHeader />
     <main id="main">
-      <router-view></router-view>
+      <transition mode="out-in" appear>
+        <router-view></router-view>
+      </transition>
     </main>
     <the-footer />
   </div>
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader.vue";
-import TheFooter from "./components/TheFooter.vue";
+import TheHeader from "@/components/TheHeader";
+import TheFooter from "@/components/TheFooter";
 
 export default {
   components: {
@@ -89,6 +91,10 @@ body {
   background-color: #65d;
   transform: translateY(-0.2rem);
   box-shadow: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.35);
+}
+
+label {
+  max-width: .5rem;
 }
 
 input,

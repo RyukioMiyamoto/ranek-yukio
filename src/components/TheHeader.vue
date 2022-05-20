@@ -2,7 +2,7 @@
   <header>
     <nav>
       <router-link to="/" class="logo">
-        <img src="../assets/ranek.svg" alt="Ranek"
+        <img src="@/assets/ranek.svg" alt="Ranek"
       /></router-link>
       <router-link to="/login" class="btn">Vender/Login</router-link>
     </nav>
@@ -21,7 +21,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  box-shadow: 0 .2rem .4rem rgba(30, 60, 90, 0.1);
+  box-shadow: 0 0.2rem 0.4rem rgba(30, 60, 90, 0.1);
 }
 
 .logo {
@@ -30,7 +30,7 @@ nav {
 
 .logo img {
   width: 9rem;
-  transition: .25s;
+  transition: 0.25s;
 }
 
 .logo img:hover {
