@@ -1,8 +1,7 @@
 <template>
-  <section>
-    <form class="login">
-      <h1>Login</h1>
-      <p>{{ !this.$store.state.login ? "" : "Logou" }}</p>
+  <section class="login">
+    <h1>Login</h1>
+    <form>
       <label for="email">Email</label>
       <input
         type="email"
