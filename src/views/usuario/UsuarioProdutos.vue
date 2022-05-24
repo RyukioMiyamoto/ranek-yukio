@@ -45,4 +45,15 @@ export default {
 h2 {
   margin-bottom: 2rem;
 }
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.25s;
+}
+
+.list-enter,
+.list-leave-to {
+  opacity: 0;
+  transform: translate3d(2rem, 0, 0);
+}
 </style>
