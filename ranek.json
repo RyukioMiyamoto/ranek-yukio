@@ -46,15 +46,6 @@
       "fotos": null
     },
     {
-      "id": "tablet",
-      "nome": "Tablet",
-      "user_id": "andre@origamid.com",
-      "preco": "2999",
-      "vendido": "false",
-      "descricao": "Esse é um novo tablet",
-      "fotos": null
-    },
-    {
       "id": "smartwatch",
       "nome": "Smartwatch",
       "user_id": "andre@origamid.com",
@@ -65,11 +56,11 @@
     },
     {
       "nome": "Roberto Yukio Miyamoto Arita",
-      "preco": "123",
+      "preco": "525252",
       "fotos": null,
-      "descricao": "123",
-      "user_id": "Robertoyukio@outlook.com",
-      "id": "RI_nAcY"
+      "descricao": "525252",
+      "user_id": "andre@origamid.com",
+      "id": "6lZYQMF"
     }
   ]
 }
