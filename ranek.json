@@ -21,6 +21,18 @@
       "numero": "52",
       "estado": "RJ",
       "cidade": "Rio de Janeiro"
+    },
+    {
+      "id": "Robertoyukio@outlook.com",
+      "email": "Robertoyukio@outlook.com",
+      "nome": "Roberto Yukio Miyamoto Arita",
+      "senha": "123",
+      "rua": "Rua Afonso Celso",
+      "cep": "12247060",
+      "numero": "57",
+      "estado": "SP",
+      "cidade": "São José dos Campos",
+      "bairro": "Eugênio de Mello"
     }
   ],
   "produto": [
