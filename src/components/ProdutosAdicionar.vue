@@ -35,6 +35,7 @@ export default {
         fotos: null,
         descricao: "",
         user_id: "",
+        vendido: "false",
       },
     };
   },

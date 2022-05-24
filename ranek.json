@@ -1,4 +1,115 @@
 {
+  "transacao": [
+    {
+      "comprador_id": "andre@origamid.com",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "notebook",
+        "nome": "Notebook",
+        "user_id": "andre@origamid.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12345678",
+        "rua": "Rua Rua",
+        "numero": "52",
+        "bairro": "Eugênio de Mello",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      "id": 1
+    },
+    {
+      "comprador_id": "andre@origamid.com",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "smartwatch",
+        "nome": "Smartwatch",
+        "user_id": "andre@origamid.com",
+        "preco": "799",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartwatch",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12345678",
+        "rua": "Rua Rua",
+        "numero": "52",
+        "bairro": "Eugênio de Mello",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      "id": 2
+    },
+    {
+      "comprador_id": "novo@email.com",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "notebook",
+        "nome": "Notebook",
+        "user_id": "andre@origamid.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12247060",
+        "rua": "Rua Afonso Celso",
+        "numero": "57",
+        "bairro": "aaa",
+        "cidade": "São José dos Campos",
+        "estado": "SP"
+      },
+      "id": 3
+    },
+    {
+      "comprador_id": "novo@email.com",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "notebook",
+        "nome": "Notebook",
+        "user_id": "andre@origamid.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "12247060",
+        "rua": "Rua Afonso Celso",
+        "numero": "57",
+        "bairro": "Aa",
+        "cidade": "São José dos Campos",
+        "estado": "SP"
+      },
+      "id": 4
+    },
+    {
+      "comprador_id": "",
+      "vendedor_id": "andre@origamid.com",
+      "produto": {
+        "id": "notebook",
+        "nome": "Notebook",
+        "user_id": "andre@origamid.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo notebook",
+        "fotos": null
+      },
+      "endereco": {
+        "cep": "",
+        "rua": "",
+        "numero": "",
+        "cidade": "",
+        "estado": ""
+      },
+      "id": 5
+    }
+  ],
   "usuario": [
     {
       "id": "andre@origamid.com",
@@ -33,6 +144,29 @@
       "estado": "SP",
       "cidade": "São José dos Campos",
       "bairro": "Eugênio de Mello"
+    },
+    {
+      "id": "novo@email.com",
+      "email": "novo@email.com",
+      "nome": "novo",
+      "senha": "123",
+      "rua": "Rua Afonso Celso",
+      "cep": "12247060",
+      "numero": "57",
+      "estado": "SP",
+      "cidade": "São José dos Campos",
+      "bairro": "Aa"
+    },
+    {
+      "id": "VL_vOTK",
+      "email": "",
+      "nome": "",
+      "senha": "",
+      "rua": "",
+      "cep": "",
+      "numero": "",
+      "estado": "",
+      "cidade": ""
     }
   ],
   "produto": [
@@ -53,14 +187,6 @@
       "vendido": "false",
       "descricao": "Esse é um novo smartwatch",
       "fotos": null
-    },
-    {
-      "nome": "Roberto Yukio Miyamoto Arita",
-      "preco": "525252",
-      "fotos": null,
-      "descricao": "525252",
-      "user_id": "andre@origamid.com",
-      "id": "6lZYQMF"
     }
   ]
 }
